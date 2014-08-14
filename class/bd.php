@@ -18,7 +18,8 @@ class bd{
 				$this->l=$link;
 			}
 			else{
-				echo "No se pudo encontrar la Base de Datos ";
+				echo mysql_error($link);
+				echo "No se pudo encontrar la Base de Datos Requerida";
 				exit();
 			}
 		}else{
